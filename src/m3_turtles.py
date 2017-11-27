@@ -128,7 +128,7 @@ ryan.draw_regular_polygon(6,50)
 
 ########################################################################
 #
-# Done: 5.
+# Done : 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
