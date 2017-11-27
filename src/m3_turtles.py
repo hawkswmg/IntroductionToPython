@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
@@ -55,29 +55,35 @@ window.delay(20)  # Bigger numbers mean slower animation.
 # ----------------------------------------------------------------------
 # Makes (constructs) a   SimpleTurtle   object.
 # ----------------------------------------------------------------------
-dave = rg.SimpleTurtle()
+dave = rg.SimpleTurtle('turtle')
+dave.pen = rg.Pen('blue',200)
 
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
-dave.forward(100)
-dave.left(90)
-dave.forward(200)
+dave.speed=5
+dave.forward(70)
+dave.left(50)
+dave.forward(150)
+dave.left(130)
+dave.forward(70)
 
 # ----------------------------------------------------------------------
 # Construct a new turtle and ask it to do things.
 # ----------------------------------------------------------------------
 matt = rg.SimpleTurtle('turtle')
-matt.pen = rg.Pen('red', 30)
-matt.speed = 10  # Faster
-matt.backward(50)
-matt.left(90)
-matt.forward(50)
+matt.pen = rg.Pen('green', 30)
+matt.speed = 5  # Faster
+matt.backward(70)
+matt.left(50)
+matt.forward(150)
+matt.right(50)
+matt.forward(70)
 
 
 ########################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -91,7 +97,7 @@ matt.forward(50)
 
 ########################################################################
 #
-# TODO: 4.
+# Done: 4.
 #   The code above  CONSTRUCTS  two SimpleTurtle objects and gives those objects NAMES:
 #       dave    matt
 #
@@ -110,9 +116,19 @@ matt.forward(50)
 #
 ########################################################################
 
+ryan = rg.SimpleTurtle('turtle')
+ryan.forward(50)
+ryan.draw_regular_polygon(6,50)
+ryan.right(120)
+ryan.forward(50)
+ryan.draw_regular_polygon(6,50)
+ryan.right(120)
+ryan.forward(50)
+ryan.draw_regular_polygon(6,50)
+
 ########################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
