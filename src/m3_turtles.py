@@ -117,6 +117,7 @@ matt.forward(70)
 ########################################################################
 
 ryan = rg.SimpleTurtle('turtle')
+ryan.speed=5
 ryan.forward(50)
 ryan.draw_regular_polygon(6,50)
 ryan.right(120)
